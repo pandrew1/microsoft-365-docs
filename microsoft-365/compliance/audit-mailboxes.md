@@ -139,6 +139,9 @@ Remember, an admin with Full Access permission to a Microsoft 365 Group mailbox 
 |**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
 |**Update**|A message or any of its properties was changed.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
 
+### Mailbox actions for resource mailboxes
+Resource mailboxes are not designed to support audit logging. This limitation is due to their intended purpose and usage, which is primarily for booking shared resources—such as meeting rooms or equipment—rather than being used in delegate scenarios or functioning as individual user accounts.
+
 ### Verify that default mailbox actions are being logged for each logon type
 
 Mailbox auditing on by default adds a new *DefaultAuditSet* property to all mailboxes. The value of this property indicates whether the default mailbox actions (managed by Microsoft) are being audited on the mailbox.
